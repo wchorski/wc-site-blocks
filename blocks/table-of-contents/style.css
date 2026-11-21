@@ -1,0 +1,56 @@
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/*
+ * Prevent anchored headings from being hidden beneath a sticky header.
+ * Change 100px to match your site's actual header height.
+ */
+.wp-block-post-content h2[id],
+.wp-block-post-content h3[id],
+.entry-content h2[id],
+.entry-content h3[id] {
+  scroll-margin-top: 100px;
+}
+
+.wp-block-site-blocks-table-of-contents {
+  padding: 1.25rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+}
+
+.auto-toc__title {
+  margin-block-start: 0;
+  margin-block-end: 0.75rem;
+  font-size: 1.25em;
+}
+
+.auto-toc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.auto-toc__item {
+  margin-block: 0.4rem;
+}
+
+.auto-toc__item--h3 {
+  padding-inline-start: 1.5rem;
+}
+
+.auto-toc__link {
+  text-decoration: none;
+}
+
+.auto-toc__link:hover,
+.auto-toc__link:focus-visible {
+  text-decoration: underline;
+}
+
+.auto-toc__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}

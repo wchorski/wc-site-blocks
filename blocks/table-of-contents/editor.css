@@ -1,0 +1,9 @@
+.wp-block-site-blocks-table-of-contents.auto-toc-editor-preview {
+    padding: 1rem;
+    border: 1px dashed #949494;
+    border-radius: 4px;
+}
+
+.wp-block-site-blocks-table-of-contents .components-placeholder {
+    min-height: 120px;
+}

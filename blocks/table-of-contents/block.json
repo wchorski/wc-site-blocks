@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "site-blocks/table-of-contents",
+    "version": "1.0.0",
+    "title": "WC Table of Contents",
+    "category": "text",
+    "icon": "list-view",
+    "description": "Automatically creates links to headings on the page.",
+    "keywords": [
+        "contents",
+        "headings",
+        "navigation",
+        "anchors"
+    ],
+    "textdomain": "site-blocks",
+
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "On this page"
+        },
+        "includeH2": {
+            "type": "boolean",
+            "default": true
+        },
+        "includeH3": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+
+    "supports": {
+        "anchor": true,
+        "html": false
+    },
+
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css",
+    "viewScript": "file:./view.js",
+    "render": "file:./render.php"
+}
